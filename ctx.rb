@@ -5,21 +5,21 @@
 class Ctx < Formula
   desc "Project memory for AI agents"
   homepage "https://github.com/divitsheth/ctx-releases"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/divitsheth/ctx-releases/releases/download/v0.1.1/ctx_0.1.1_darwin_amd64.tar.gz"
-      sha256 "7867c9a57646cb6ff002df2a40bb9a6e50b0ebe62045f5010b471428396ea546"
+      url "https://github.com/divitsheth/ctx-releases/releases/download/v0.1.2/ctx_0.1.2_darwin_amd64.tar.gz"
+      sha256 "ac9bfa67235e1b6710922f9306f587af599fc7732a433ce80e01bfdade813769"
 
       define_method(:install) do
         bin.install "ctx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/divitsheth/ctx-releases/releases/download/v0.1.1/ctx_0.1.1_darwin_arm64.tar.gz"
-      sha256 "07b4c0743e66ad0c4f9965da53ebf711205fe69a279121a2d8bb06dab31ab099"
+      url "https://github.com/divitsheth/ctx-releases/releases/download/v0.1.2/ctx_0.1.2_darwin_arm64.tar.gz"
+      sha256 "6f88eee7fa0467326efb022e8100cbea0709fd4ee578f8fb9d71fc7bc1e07514"
 
       define_method(:install) do
         bin.install "ctx"
@@ -29,15 +29,15 @@ class Ctx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/divitsheth/ctx-releases/releases/download/v0.1.1/ctx_0.1.1_linux_amd64.tar.gz"
-      sha256 "f002744ae8a36a08c740b2dc2430998f219b920973d1e631c9a869bf4ffe10d2"
+      url "https://github.com/divitsheth/ctx-releases/releases/download/v0.1.2/ctx_0.1.2_linux_amd64.tar.gz"
+      sha256 "c7c73d9002de940c062238c9a78d1f870763feb41adf84f01f90819d507e1413"
       define_method(:install) do
         bin.install "ctx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/divitsheth/ctx-releases/releases/download/v0.1.1/ctx_0.1.1_linux_arm64.tar.gz"
-      sha256 "d34335af3201a0f20fa22dfc6bcc62a2a4b14a27722641d58c069103e535a544"
+      url "https://github.com/divitsheth/ctx-releases/releases/download/v0.1.2/ctx_0.1.2_linux_arm64.tar.gz"
+      sha256 "a8dc44473b6c2963b80b5cf01dad2e7856db974d9630e3adc0d168261bde9bd1"
       define_method(:install) do
         bin.install "ctx"
       end
